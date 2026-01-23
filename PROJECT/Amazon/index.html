@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Online Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <div class="logo"></div>
+                <div class="nav-address">
+                    <div class="deliver-to">Deliver to</div>
+                    <div class="country">India</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <select class="search-select">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Home</option>
+                <option>Books</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search Amazon.in">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-item">
+                <div class="nav-text-small">Hello, sign in</div>
+                <div class="nav-text-bold">Account & Lists</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-text-small">Returns</div>
+                <div class="nav-text-bold">& Orders</div>
+            </div>
+            <div class="nav-item nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-text">Cart</div>
+                <div class="cart-count">0</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sub Navbar -->
+    <div class="sub-nav">
+        <div class="sub-nav-item"><i class="fas fa-bars"></i> All</div>
+        <div class="sub-nav-item">Today's Deals</div>
+        <div class="sub-nav-item">Customer Service</div>
+        <div class="sub-nav-item">Registry</div>
+        <div class="sub-nav-item">Gift Cards</div>
+        <div class="sub-nav-item">Sell</div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Amazon</h1>
+              
+            </div>
+        </div>
+        
+        <div class="shop-section">
+            <div class="box">
+                <h2>Gaming accessories</h2>
+                <div class="box-content">
+                    <div class="product" data-category="headsets">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center" alt="Headphones">
+                        <p>Headsets</p>
+                        <div class="price">From ₹1,499</div>
+                    </div>
+                    <div class="product" data-category="keyboards">
+                        <img src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop&crop=center" alt="Keyboard">
+                        <p>Keyboards</p>
+                        <div class="price">From ₹899</div>
+                    </div>
+                    <div class="product" data-category="mice">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w-400&h=300&fit=crop&crop=center" alt="Mouse">
+                        <p>Computer mice</p>
+                        <div class="price">From ₹399</div>
+                    </div>
+                    <div class="product" data-category="chairs">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center" alt="Gaming Chair">
+                        <p>Gaming Chairs</p>
+                        <div class="price">From ₹4,999</div>
+                    </div>
+                </div>
+                <div class="see-more">See more</div>
+            </div>
+            
+            <div class="box">
+                <h2>Refresh your space</h2>
+                <div class="box-content">
+                    <div class="product" data-category="home">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center" alt="Home Decor">
+                        <p>Home Decor</p>
+                        <div class="price">From ₹999</div>
+                    </div>
+                    <div class="product" data-category="kitchen">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop&crop=center" alt="Kitchen">
+                        <p>Kitchen</p>
+                        <div class="price">From ₹499</div>
+                    </div>
+                    <div class="product" data-category="bedroom">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=300&fit=crop&crop=center" alt="Bedroom">
+                        <p>Bedroom</p>
+                        <div class="price">From ₹1,999</div>
+                    </div>
+                    <div class="product" data-category="health">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Health">
+                        <p>Health & Care</p>
+                        <div class="price">From ₹299</div>
+                    </div>
+                </div>
+                <div class="see-more">See more</div>
+            </div>
+            
+            <div class="box">
+                <h2>Deals in PCs</h2>
+                <div class="box-content">
+                    <div class="product" data-category="laptops">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop&crop=center" alt="Laptop">
+                        <p>Laptops</p>
+                        <div class="price">From ₹29,999</div>
+                    </div>
+                    <div class="product" data-category="desktops">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400&h=300&fit=crop&crop=center" alt="Desktop">
+                        <p>Desktop PCs</p>
+                        <div class="price">From ₹34,999</div>
+                    </div>
+                    <div class="product" data-category="monitors">
+                        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=400&h=300&fit=crop&crop=center" alt="Monitor">
+                        <p>Monitors</p>
+                        <div class="price">From ₹7,999</div>
+                    </div>
+                    <div class="product" data-category="accessories">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=300&fit=crop&crop=center" alt="Accessories">
+                        <p>PC Accessories</p>
+                        <div class="price">From ₹199</div>
+                    </div>
+                </div>
+                <div class="see-more">See more</div>
+            </div>
+            
+            <div class="box">
+                <h2>Top Deal</h2>
+                <div class="box-content">
+                    <div class="product" data-category="headphones">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center" alt="Headphone Deal">
+                        <p>Up to 50% off | Headphones</p>
+                        <div class="price-deal">Save up to ₹2,000</div>
+                    </div>
+                    <div class="product" data-category="smartwatches">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop&crop=center" alt="Smartwatch">
+                        <p>Smartwatches</p>
+                        <div class="price">From ₹1,999</div>
+                    </div>
+                    <div class="product" data-category="tablets">
+                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop&crop=center" alt="Tablet">
+                        <p>Tablets</p>
+                        <div class="price">From ₹8,999</div>
+                    </div>
+                    <div class="product" data-category="mobiles">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop&crop=center" alt="Mobile">
+                        <p>Mobile phones</p>
+                        <div class="price">From ₹6,999</div>
+                    </div>
+                </div>
+                <div class="see-more">See more</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="back-to-top">
+            <i class="fas fa-chevron-up"></i> Back to top
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press Releases</li>
+                    <li>Amazon Science</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><i class="fab fa-facebook"></i> Facebook</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li>Sell on Amazon</li>
+                    <li>Sell under Amazon Accelerator</li>
+                    <li>Protect and Build Your Brand</li>
+                    <li>Amazon Global Selling</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>COVID-19 and Amazon</li>
+                    <li>Your Account</li>
+                    <li>Returns Centre</li>
+                    <li>100% Purchase Protection</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright-text">
+                    © 2023 Amazon Clone | Made for educational purposes
+                </div>
+                <div class="footer-links-small">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Interest-Based Ads</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

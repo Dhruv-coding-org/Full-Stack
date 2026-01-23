@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="home.css" />
+  <title>Air Bnb</title>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="header_navbar">
+
+      <ul class="header_nav_items">
+        <li class="header_nav_items_item1 item"><a href="/">Home</a></li>
+        <li class="header_nav_items_item2 item"><a href="/registerHome">Add Home</a></li>
+      </ul>
+<!-- ===== Dark mode ===== -->
+<div class="theme-switch">
+  <button id="darkModeToggle" class="toggle-btn" aria-label="Toggle dark mode">
+    <span class="toggle-thumb"></span>
+  </button>
+
+    </div>
+    
+
+
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+
+    <h1 class="main_heading">Here are our registered homes:</h1>
+
+    <div class="cards">
+
+      <% if (registeredHomeData && registeredHomeData.length > 0) { %>
+
+        <% registeredHomeData.forEach(home => { %>
+
+          <article class="card">
+
+            <!-- IMAGE SECTION -->
+            <div class="card_image_wrapper">
+              <img 
+                src="<%= home.photourl %>" 
+                alt="Home image"
+                class="card_img"
+              />
+            </div>
+
+            <!-- DETAILS SECTION -->
+            <div class="card_body">
+
+              <h2 class="card_title"><%= home.homeName %></h2>
+
+              <p class="card_location">
+                📍 <%= home.Location %>
+              </p>
+
+              <div class="card_meta">
+                <span class="card_price">
+                  ₹<%= home.pricePerNight %> / night
+                </span>
+
+                <span class="card_rating">
+                  ⭐ <%= home.rating %> / 10
+                </span>
+              </div>
+
+            </div>
+
+          </article>
+
+        <% }) %>
+
+      <% } else { %>
+
+        <!-- EMPTY STATE -->
+        <article class="card">
+          <div class="card_body">
+            <h2 class="card_title">No homes registered yet</h2>
+            <p class="card_location">
+              Click <strong>Add Home</strong> to add your first listing.
+            </p>
+          </div>
+        </article>
+
+      <% } %>
+
+    </div>
+
+  </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("darkModeToggle");
+
+    if (!toggle) return;
+
+    // Start in dark mode
+    document.body.classList.add("dark");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
