@@ -13,7 +13,7 @@ app.use(express.static("public"))
 //creating a server
 const port=5000;
 app.listen(port,()=>{
-    console.log(`server is listining at https://locahost:${port}`)
+    console.log(`server is listining at ${port}`)
 })
 
 
