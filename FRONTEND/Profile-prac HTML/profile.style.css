@@ -1,30 +1,133 @@
-body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-div{
-    
-    align-content: center;
-}
-.card{
-    display: flex;
-    width: 100vw;
-    padding: 3px;
-    border: 5px solid rgb(233, 233, 233);
-    
+body {
+  background: #0f172a;
+  color: white;
 }
 
-.banner{
-  position: fixed;
-  top: 15px;
-  left: 0;
-  width: 100vw;
-  height: calc(100vh - 15px);
-  object-fit: cover;
-  z-index: -1;
+/* Main wrapper */
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+/* Card */
+.card {
+  background: #1e293b;
+  padding: 40px;
+  /*
+  border-radius: 16px;
+  */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* About */
+.about {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Primary */
+.primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.primary:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* Secondary */
+.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .wrapper {
+    margin: 40px auto;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
 }
